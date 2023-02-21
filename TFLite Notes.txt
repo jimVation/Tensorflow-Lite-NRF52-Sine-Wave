@@ -1,0 +1,11 @@
+Notes on adding tensorflow lite to an existing project
+
+Starting with a working Nordic project, bsp, from SDK 17.0.2, using Segger SES 7.10a.
+Target is PCA10056
+Get RTT working
+	Disabled retarget
+	Enabled RTT (RTT_ENABLED = 1)
+	Exculded segger file from build
+	
+
+
