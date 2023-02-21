@@ -6,6 +6,10 @@ Get RTT working
 	Disabled retarget
 	Enabled RTT (RTT_ENABLED = 1)
 	Exculded segger file from build
-	
+
+Plan is to put tensor flow "main" stuff into a separate top level file called TFLite_Top.cpp
+Added a pointer to model
+Added some include tflite folders
+Changed c++ type to c++11 (in SES project build options)
 
 
