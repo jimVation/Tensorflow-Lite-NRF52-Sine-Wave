@@ -10,7 +10,6 @@ const tflite::Model* model = nullptr;
 tflite::MicroInterpreter* interpreter = nullptr;
 TfLiteTensor* input = nullptr;
 TfLiteTensor* output = nullptr;
-int inference_count = 0;
 
 constexpr int kTensorArenaSize = 2056;
 alignas(16) uint8_t tensor_arena[kTensorArenaSize];
@@ -34,4 +33,40 @@ void setup_tf_system(void)
   // NOLINTNEXTLINE(runtime-global-variables)
   static tflite::AllOpsResolver resolver;
 
+  // Build an interpreter to run the model with.
+  static tflite::MicroInterpreter static_interpreter(model, resolver, tensor_arena, kTensorArenaSize);
+  interpreter = &static_interpreter;
+
+  // Allocate memory from the tensor_arena for the model's tensors.
+  TfLiteStatus allocate_status = interpreter->AllocateTensors();
+  if (allocate_status != kTfLiteOk) 
+  {
+    MicroPrintf("AllocateTensors() failed");
+    return;
+  }
+
+  // Obtain pointers to the model's input and output tensors.
+  input = interpreter->input(0);
+  output = interpreter->output(0);
 }
+
+void evaluate_tf_model(float operand)
+{
+  // Place the input in the model's input tensor
+  input->data.f[0] = operand;
+
+  // Run inference, and report any error
+  TfLiteStatus invoke_status = interpreter->Invoke();
+  if (invoke_status != kTfLiteOk) 
+  {
+    MicroPrintf("Invoke failed on operand: %f\n", static_cast<double>(operand));
+    return;
+  }
+
+  // Obtain the  output from model's output tensor
+  float y = output->data.f[0];
+
+  // Log the current X and Y values
+  MicroPrintf("x_value: %f, y_value: %f\n", static_cast<double>(operand), static_cast<double>(y));   
+}
+
