@@ -3,7 +3,7 @@
 #include "tensorflow/lite/micro/micro_log.h"
 #include "tensorflow/lite/micro/all_ops_resolver.h"
 
-#include "TFLite_Top.h"
+//#include "TFLite_Top.h"
 #include "sine_wave_model_data.h"
 
 const tflite::Model* model = nullptr;
@@ -70,3 +70,7 @@ void evaluate_tf_model(float operand)
   MicroPrintf("x_value: %f, y_value: %f\n", static_cast<double>(operand), static_cast<double>(y));   
 }
 
+extern "C" void callme(void)
+{
+    setup_tf_system();
+}

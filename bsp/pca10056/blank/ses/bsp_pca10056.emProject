@@ -13,6 +13,7 @@
     <configuration
       Name="Common"
       arm_architecture="v7EM"
+      arm_compiler_variant="gcc"
       arm_core_type="Cortex-M4"
       arm_endian="Little"
       arm_fp_abi="Hard"
@@ -24,6 +25,7 @@
       arm_simulator_memory_simulation_parameter="RWX 00000000,00100000,FFFFFFFF;RWX 20000000,00010000,CDCDCDCD"
       arm_target_device_name="nRF52840_xxAA"
       arm_target_interface_type="SWD"
+      c_files_are_cpp="No"
       c_preprocessor_definitions="APP_TIMER_V2;APP_TIMER_V2_RTC1_ENABLED;BOARD_PCA10056;BSP_UART_SUPPORT;CONFIG_GPIO_AS_PINRESET;FLOAT_ABI_HARD;INITIALIZE_USER_SECTIONS;NO_VTOR_CONFIG;NRF52840_XXAA;"
       c_user_include_directories="C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/boards;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/drivers_nrf/nrf_soc_nosd;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/atomic;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/atomic_fifo;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/balloc;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/bsp;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/button;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/delay;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/experimental_section_vars;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/fifo;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/log;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/log/src;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/memobj;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/ringbuf;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/scheduler;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/sortlist;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/strerror;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/timer;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/uart;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/util;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/toolchain/cmsis/include;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/external/fprintf;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/external/segger_rtt;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/integration/nrfx;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/integration/nrfx/legacy;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/drivers/include;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/hal;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/mdk;../config;C:/TensorFlow/tflite-micro;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\micro\\tools\\make\\downloads\\flatbuffers\\include;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\micro\\tools\\make\\downloads\\gemmlowp"
       debug_register_definition_file="C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/mdk/nrf52840.svd"
@@ -43,7 +45,7 @@
       project_directory=""
       project_type="Executable" />
     <folder Name="Application">
-      <file file_name="../../../main.c" />
+      <file file_name="../../../main.cpp" />
       <file file_name="../config/sdk_config.h" />
     </folder>
     <folder Name="Board Definition">
@@ -61,11 +63,39 @@
       <file file_name="$(StudioDir)/source/thumb_crt0.s" />
     </folder>
     <folder Name="TensorFlowLite">
-      <file file_name="TFLite_Top.cpp" />
-      <file file_name="TFLite_Top.h" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/all_ops_resolver.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/core/c/common.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/core/api/error_reporter.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/flatbuffer_utils.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/kernel_util.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/memory_helpers.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_allocation_info.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_allocator.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_context.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/tflite_bridge/micro_error_reporter.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_graph.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_interpreter.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_log.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_resource_variable.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_string.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/core/api/op_resolver.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/tflite_bridge/op_resolver_bridge.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/schema/schema_utils.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/arena_allocator/single_arena_buffer_allocator.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/system_setup.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/var_handle.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/while.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/zeros_like.cc" />
+    </folder>
+    <folder Name="TensorFlowLiteCustom">
+      <file file_name="../../../TFLite_Top.cpp" />
+      <file file_name="../../../TFLite_Top.h" />
       <file file_name="../../../debug_log.cc" />
       <file file_name="../../../sine_wave_model_data.cc" />
-      <file file_name="sine_wave_model_data.h" />
+      <file file_name="../../../sine_wave_model_data.h" />
     </folder>
     <folder Name="nRF_Drivers">
       <file file_name="C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/integration/nrfx/legacy/nrf_drv_uart.c" />
