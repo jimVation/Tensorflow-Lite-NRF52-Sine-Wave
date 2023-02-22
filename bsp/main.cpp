@@ -137,7 +137,8 @@ int main(void)
     NRF_LOG_INFO("BSP example started.");
     bsp_configuration();
 
-    callme();
+    //callme();
+    setup_tf_system();
     evaluate_tf_model(1.0f);
 
     while (true)

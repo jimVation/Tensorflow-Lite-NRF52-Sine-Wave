@@ -14,7 +14,7 @@ TfLiteTensor* output = nullptr;
 constexpr int kTensorArenaSize = 2056;
 alignas(16) uint8_t tensor_arena[kTensorArenaSize];
 
-void setup_tf_system(void)
+extern "C" void setup_tf_system(void)
 {
    tflite::InitializeTarget(); 
 
@@ -50,7 +50,7 @@ void setup_tf_system(void)
   output = interpreter->output(0);
 }
 
-void evaluate_tf_model(float operand)
+extern "C" void evaluate_tf_model(float operand)
 {
   // Place the input in the model's input tensor
   input->data.f[0] = operand;
@@ -70,7 +70,7 @@ void evaluate_tf_model(float operand)
   MicroPrintf("x_value: %f, y_value: %f\n", static_cast<double>(operand), static_cast<double>(y));   
 }
 
-extern "C" void callme(void)
-{
-    setup_tf_system();
-}
+//extern "C" void callme(void)
+//{
+//    setup_tf_system();
+//}
