@@ -15,8 +15,26 @@ limitations under the License.
 
 #include "tensorflow/lite/micro/debug_log.h"
 #include "nrf_log.h"
+#include "nrf_log_ctrl.h"
 
-void DebugLog(const char* s) 
+#define BUFFER_SIZE 50
+
+// a static buffer to hold the output string for the non blocking NRF log function
+char output_buffer[BUFFER_SIZE] = {0};
+
+void DebugLog(const char* log_msg) 
 {
-    NRF_LOG_INFO("%s", s);    
+    uint8_t copy_index = 0;
+
+    // leave a space at end for null terminator
+    while ((copy_index < (BUFFER_SIZE - 1)) && (log_msg[copy_index] != 0))
+    {
+        output_buffer[copy_index] = log_msg[copy_index];
+        copy_index++;
+    }
+
+    output_buffer[copy_index] = 0;  // Make sure string has a null terminator
+
+    NRF_LOG_INFO("%s", output_buffer);    
+    NRF_LOG_FLUSH();
 }

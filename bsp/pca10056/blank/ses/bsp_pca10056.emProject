@@ -160,7 +160,7 @@
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/tflite_bridge/micro_error_reporter.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_graph.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_interpreter.cc" />
-      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_log.cc" />
+      <file file_name="../../../micro_log.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_profiler.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_resource_variable.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_string.cc" />

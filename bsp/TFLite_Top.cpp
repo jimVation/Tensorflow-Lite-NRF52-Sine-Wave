@@ -67,7 +67,7 @@ extern "C" void evaluate_tf_model(float operand)
   float y = output->data.f[0];
 
   // Log the current X and Y values
-  MicroPrintf("x_value: %f, y_value: %f\n", static_cast<double>(operand), static_cast<double>(y));   
+  MicroPrintf("x_value: %f, y_value: %f", operand, y);   
 }
 
 //extern "C" void callme(void)
