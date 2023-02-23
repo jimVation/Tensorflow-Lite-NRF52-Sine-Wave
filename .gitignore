@@ -7,3 +7,5 @@
 *.emSession
 *.map
 *.elf
+*.asm
+
