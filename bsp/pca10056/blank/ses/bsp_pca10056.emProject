@@ -27,7 +27,7 @@
       arm_target_interface_type="SWD"
       c_files_are_cpp="No"
       c_preprocessor_definitions="APP_TIMER_V2;APP_TIMER_V2_RTC1_ENABLED;BOARD_PCA10056;BSP_UART_SUPPORT;CONFIG_GPIO_AS_PINRESET;FLOAT_ABI_HARD;INITIALIZE_USER_SECTIONS;NO_VTOR_CONFIG;NRF52840_XXAA;"
-      c_user_include_directories="C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/boards;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/drivers_nrf/nrf_soc_nosd;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/atomic;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/atomic_fifo;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/balloc;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/bsp;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/button;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/delay;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/experimental_section_vars;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/fifo;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/log;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/log/src;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/memobj;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/ringbuf;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/scheduler;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/sortlist;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/strerror;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/timer;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/uart;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/util;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/toolchain/cmsis/include;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/external/fprintf;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/external/segger_rtt;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/integration/nrfx;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/integration/nrfx/legacy;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/drivers/include;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/hal;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/mdk;../config;C:/TensorFlow/tflite-micro;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\micro\\tools\\make\\downloads\\flatbuffers\\include;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\micro\\tools\\make\\downloads\\gemmlowp;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\micro\\tools\\make\\downloads\\ruy"
+      c_user_include_directories="C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/boards;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/drivers_nrf/nrf_soc_nosd;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/atomic;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/atomic_fifo;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/balloc;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/bsp;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/button;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/delay;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/experimental_section_vars;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/fifo;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/log;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/log/src;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/memobj;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/ringbuf;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/scheduler;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/sortlist;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/strerror;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/timer;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/uart;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/libraries/util;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/components/toolchain/cmsis/include;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/external/fprintf;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/external/segger_rtt;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/integration/nrfx;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/integration/nrfx/legacy;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/drivers/include;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/hal;C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/mdk;../config;C:\\TensorFlow\\tflite-micro;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\kernels;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\micro\\kernels;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\micro\\tools\\make\\downloads\\flatbuffers\\include;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\micro\\tools\\make\\downloads\\gemmlowp;C:\\TensorFlow\\tflite-micro\\tensorflow\\lite\\micro\\tools\\make\\downloads\\ruy"
       debug_register_definition_file="C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/modules/nrfx/mdk/nrf52840.svd"
       debug_start_from_entry_point_symbol="No"
       debug_target_connection="J-Link"
@@ -66,6 +66,7 @@
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/activations.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/activations_common.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/add.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/add_common.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/add_n.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/all_ops_resolver.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/arg_min_max.cc" />
@@ -131,7 +132,14 @@
       </file>
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/if.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/kernel_runner.cc" />
-      <file file_name="../../../../../tflite-micro/tensorflow/lite/kernels/kernel_util.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/kernels/kernel_util.cc">
+        <configuration
+          Name="Common"
+          build_object_file_name="$(IntDir)/kernel_util_2$(OBJ)" />
+      </file>
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/kernel_util.cc">
+        <configuration Name="Debug" build_exclude_from_build="No" />
+      </file>
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/l2_pool_2d.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/l2norm.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/leaky_relu.cc" />
@@ -173,6 +181,7 @@
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/pad.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/pooling.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/pooling_common.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/kernels/internal/portable_tensor_utils.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/prelu.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/prelu_common.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/kernels/internal/quantization_util.cc" />
@@ -221,6 +230,7 @@
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/svdf_common.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/system_setup.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/tanh.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/kernels/internal/tensor_utils.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/transpose.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/transpose_conv.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/unidirectional_sequence_lstm.cc" />
@@ -233,9 +243,9 @@
       <file file_name="../../../TFLite_Top.cpp" />
       <file file_name="../../../TFLite_Top.h" />
       <file file_name="../../../debug_log.cc" />
+      <file file_name="../../../macro_constants.h" />
       <file file_name="../../../sine_wave_model_data.cc" />
       <file file_name="../../../sine_wave_model_data.h" />
-      <file file_name="../../../spaces.cpp" />
     </folder>
     <folder Name="nRF_Drivers">
       <file file_name="C:/Nordic_SDKs/nRF5_SDK_17.0.2_d674dde/integration/nrfx/legacy/nrf_drv_uart.c" />
