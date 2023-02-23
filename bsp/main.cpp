@@ -140,6 +140,11 @@ int main(void)
     //callme();
     setup_tf_system();
     evaluate_tf_model(1.0f);
+    evaluate_tf_model(2.0f);
+    evaluate_tf_model(3.0f);
+    evaluate_tf_model(4.0f);
+    evaluate_tf_model(5.0f);
+    evaluate_tf_model(6.0f);
 
     while (true)
     {
