@@ -14,6 +14,8 @@ limitations under the License.
 ==============================================================================*/
 
 #include "tensorflow/lite/micro/micro_log.h"
+#include "nrf_log.h"
+#include "nrf_log_ctrl.h"
 
 #include <cstdarg>
 #include <cstdint>
@@ -24,16 +26,15 @@ limitations under the License.
 #include "tensorflow/lite/micro/micro_string.h"
 #endif
 
-void Log(const char* format, va_list args) {
-#if !defined(TF_LITE_STRIP_ERROR_STRINGS)
-  // Only pulling in the implementation of this function for builds where we
-  // expect to make use of it to be extra cautious about not increasing the code
-  // size.
-  static constexpr int kMaxLogLen = 256;
-  char log_buffer[kMaxLogLen];
-  MicroVsnprintf(log_buffer, kMaxLogLen, format, args);
-  DebugLog(log_buffer);
-#endif
+#define BUFFER_SIZE 50
+
+void Log(const char* format, va_list args) 
+{
+  char log_buffer[BUFFER_SIZE];
+  //vsnprintf(log_buffer, BUFFER_SIZE, format, args);
+  MicroVsnprintf(log_buffer, BUFFER_SIZE, format, args);
+  NRF_LOG_INFO("%s", log_buffer);
+  NRF_LOG_FLUSH();
 }
 
 #if !defined(TF_LITE_STRIP_ERROR_STRINGS)
