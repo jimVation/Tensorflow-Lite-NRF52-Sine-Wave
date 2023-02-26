@@ -3,7 +3,7 @@
 #include "tensorflow/lite/micro/micro_log.h"
 #include "tensorflow/lite/micro/all_ops_resolver.h"
 
-//#include "TFLite_Top.h"
+#include "TFLite_Top.h"
 #include "sine_wave_model_data.h"
 
 const tflite::Model* model = nullptr;
