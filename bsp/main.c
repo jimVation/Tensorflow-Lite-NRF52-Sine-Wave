@@ -75,18 +75,18 @@ void bsp_evt_handler(bsp_event_t evt)
     switch (evt)
     {
         case BSP_EVENT_KEY_0:
-            //if (actual_state != BSP_INDICATE_FIRST)
-            //    actual_state = actual_state - 1;
-            //else
-            //    actual_state = BSP_INDICATE_LAST;
+            if (actual_state != BSP_INDICATE_FIRST)
+                actual_state = actual_state - 1;
+            else
+                actual_state = BSP_INDICATE_LAST;
             break;
 
         case BSP_EVENT_KEY_1:
 
-            //if (actual_state != BSP_INDICATE_LAST)
-            //    actual_state = actual_state + 1;
-            //else
-            //    actual_state = BSP_INDICATE_FIRST;
+            if (actual_state != BSP_INDICATE_LAST)
+                actual_state = actual_state + 1;
+            else
+                actual_state = BSP_INDICATE_FIRST;
             break;
 
         default:

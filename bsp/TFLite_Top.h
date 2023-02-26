@@ -6,7 +6,6 @@
 extern "C" {
 #endif
 
-//void callme(void);
 void setup_tf_system(void);
 void evaluate_tf_model(float operand);
 
