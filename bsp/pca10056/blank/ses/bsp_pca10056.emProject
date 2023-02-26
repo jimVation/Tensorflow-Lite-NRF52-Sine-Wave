@@ -242,7 +242,6 @@
     <folder Name="TensorFlowLiteCustom">
       <file file_name="../../../TFLite_Top.cpp" />
       <file file_name="../../../TFLite_Top.h" />
-      <file file_name="../../../debug_log.cc" />
       <file file_name="../../../macro_constants.h" />
       <file file_name="../../../sine_wave_model_data.cc" />
       <file file_name="../../../sine_wave_model_data.h" />
