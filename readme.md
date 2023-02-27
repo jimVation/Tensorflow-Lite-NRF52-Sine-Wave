@@ -6,7 +6,7 @@ Nordic SDK: 17.0.2
 
 Segger SES: 7.10a
 
-Tensorflow Lite Library: Commit 3e6bf5ba, February 20, 2023 01:21 PM
+Tensorflow Lite Library: Github "tensorflo/tflite-micro" Commit 3e6bf5ba, February 20, 2023 01:21 PM
 
 Nordic SDK and TF Lite library not included in this repo.
 
