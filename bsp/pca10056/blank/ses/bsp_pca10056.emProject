@@ -132,13 +132,13 @@
       </file>
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/if.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/kernel_runner.cc" />
+      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/kernel_util.cc">
+        <configuration Name="Debug" build_exclude_from_build="No" />
+      </file>
       <file file_name="../../../../../tflite-micro/tensorflow/lite/kernels/kernel_util.cc">
         <configuration
           Name="Common"
           build_object_file_name="$(IntDir)/kernel_util_2$(OBJ)" />
-      </file>
-      <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/kernel_util.cc">
-        <configuration Name="Debug" build_exclude_from_build="No" />
       </file>
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/l2_pool_2d.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/kernels/l2norm.cc" />
@@ -160,7 +160,6 @@
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/tflite_bridge/micro_error_reporter.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_graph.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_interpreter.cc" />
-      <file file_name="../../../micro_log.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_profiler.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_resource_variable.cc" />
       <file file_name="../../../../../tflite-micro/tensorflow/lite/micro/micro_string.cc" />
@@ -243,6 +242,7 @@
       <file file_name="../../../TFLite_Top.cpp" />
       <file file_name="../../../TFLite_Top.h" />
       <file file_name="../../../macro_constants.h" />
+      <file file_name="../../../micro_log.cc" />
       <file file_name="../../../sine_wave_model_data.cc" />
       <file file_name="../../../sine_wave_model_data.h" />
     </folder>
