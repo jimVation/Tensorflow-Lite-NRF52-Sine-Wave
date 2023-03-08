@@ -134,10 +134,9 @@ int main(void)
     APP_ERROR_CHECK(NRF_LOG_INIT(NULL));
     NRF_LOG_DEFAULT_BACKENDS_INIT();
 
-    NRF_LOG_INFO("BSP example started.");
+    NRF_LOG_INFO("Tensorflow Lite sine wave example started");
     bsp_configuration();
 
-    //callme();
     setup_tf_system();
     evaluate_tf_model(1.0f);
     evaluate_tf_model(2.0f);
